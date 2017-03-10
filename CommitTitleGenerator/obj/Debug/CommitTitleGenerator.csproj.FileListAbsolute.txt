@@ -1,0 +1,9 @@
+c:\users\1\documents\visual studio 2015\Projects\CommitTitleGenerator\CommitTitleGenerator\bin\Debug\CommitTitleGenerator.exe.config
+c:\users\1\documents\visual studio 2015\Projects\CommitTitleGenerator\CommitTitleGenerator\bin\Debug\CommitTitleGenerator.exe
+c:\users\1\documents\visual studio 2015\Projects\CommitTitleGenerator\CommitTitleGenerator\bin\Debug\CommitTitleGenerator.pdb
+c:\users\1\documents\visual studio 2015\Projects\CommitTitleGenerator\CommitTitleGenerator\obj\Debug\CommitTitleGenerator.csprojResolveAssemblyReference.cache
+c:\users\1\documents\visual studio 2015\Projects\CommitTitleGenerator\CommitTitleGenerator\obj\Debug\CommitTitleGenerator.Form1.resources
+c:\users\1\documents\visual studio 2015\Projects\CommitTitleGenerator\CommitTitleGenerator\obj\Debug\CommitTitleGenerator.Properties.Resources.resources
+c:\users\1\documents\visual studio 2015\Projects\CommitTitleGenerator\CommitTitleGenerator\obj\Debug\CommitTitleGenerator.csproj.GenerateResource.Cache
+c:\users\1\documents\visual studio 2015\Projects\CommitTitleGenerator\CommitTitleGenerator\obj\Debug\CommitTitleGenerator.exe
+c:\users\1\documents\visual studio 2015\Projects\CommitTitleGenerator\CommitTitleGenerator\obj\Debug\CommitTitleGenerator.pdb
