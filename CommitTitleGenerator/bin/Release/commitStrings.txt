@@ -1,3 +1,0 @@
-Bug: #NPC: Hercul | Author: Shonsu - hello WorldBug: #NPC: Hercul | Author: Shonsu - hello World
-Bug: #238Gameobject: go | Author: shonsu - Hello
-Bug: #238Gameobject: go | Author: shonsu - Hello
