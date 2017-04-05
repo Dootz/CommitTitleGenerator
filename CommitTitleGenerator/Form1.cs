@@ -49,32 +49,39 @@ namespace CommitTitleGenerator
         */
         private void Other_CB_CheckedChanged(object sender, EventArgs e)
         {
-            Other_TB.Visible = true;
-            Category = Other_CB;
+            if (!((CheckBox)sender).Checked)
+            {
+                Other_TB.Visible = true;
+                Category = Other_CB;
+            }
            // checkBoxBehavior(Other_CB);
         }
 
         private void Instance_CB_CheckedChanged(object sender, EventArgs e)
         {
-           // checkBoxBehavior(Instance_CB);
-            Category = Instance_CB;
+            // checkBoxBehavior(Instance_CB);
+            if (!((CheckBox)sender).Checked)
+                Category = Instance_CB;
         }
 
         private void GO_CB_CheckedChanged(object sender, EventArgs e)
         {
-           // checkBoxBehavior(GO_CB);
-            Category = GO_CB;
+            // checkBoxBehavior(GO_CB);
+            if (!((CheckBox)sender).Checked)
+                Category = GO_CB;
         }
 
         private void NPC_CB_CheckedChanged(object sender, EventArgs e)
         {
-           // checkBoxBehavior(NPC_CB);
-            Category = NPC_CB;
+            // checkBoxBehavior(NPC_CB);
+            if (!((CheckBox)sender).Checked)
+                Category = NPC_CB;
         }
 
         private void Quest_CB_CheckedChanged(object sender, EventArgs e)
         {
           //  checkBoxBehavior(Quest_CB);
+          if(!((CheckBox)sender).Checked)
             Category = Quest_CB;
         }
 
@@ -85,7 +92,7 @@ namespace CommitTitleGenerator
 
         private void Submit_BT_Click(object sender, EventArgs e)
         {
-            task = new Task(Category.Text, Specifier_TB.Text, Author_TB.Text, Desc_TB.Text, Number_TB.Text);
+            generateTask();
             Result_TB.Text = task.returnCommitDescription();
         }
 
@@ -93,8 +100,13 @@ namespace CommitTitleGenerator
         {
             if (task == null)
                 return;
-
+            generateTask();
             task.saveToFile();
+        }
+
+        private void generateTask()
+        {
+            task = new Task(Category.Text, Specifier_TB.Text, Author_TB.Text, Desc_TB.Text, Number_TB.Text);
         }
     }
 }
