@@ -18,7 +18,7 @@ namespace CommitTitleGenerator
         //Return Commit Description in specific format
         public string returnCommitDescription()
         {            
-            return (Category + ": " + Specifier + " | " + "Author: " + Author + " - " + Description);            
+            return ("\nBug: #" + BugNo + "  " + Category + ": " + Specifier + " | " + "Author: " + Author + " - " + Description + "(Close Issue: #" +BugNo + ")");            
         }
 
         //Saves commit description to file
@@ -28,7 +28,7 @@ namespace CommitTitleGenerator
 
             if (s == null)
                 return false;
-            s = "\nBug: #" + BugNo + "  " + s;
+
             File.AppendAllText("commitStrings.txt", s);
             return true;
         }
